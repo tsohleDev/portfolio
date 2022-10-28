@@ -1,4 +1,4 @@
-.header {
+.toolbar {
   height: 100px;
   background: #fff;
   box-shadow: 0 1px 0 #dddfe6;
@@ -20,7 +20,7 @@
   color: #1a2236;
 }
 
-.main {
+.headline {
   display: flex;
   justify-content: left;
 }
