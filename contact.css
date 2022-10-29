@@ -1,0 +1,44 @@
+.contact{
+  background: #f9f9Fa;
+}
+
+.contact__text {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1A2236;
+  padding: 20px;
+}
+
+.contact__form {
+    display: grid;
+    grid-template-columns: 1;
+    grid-gap: 10px;
+}
+
+.name, .email{
+    height: 50px;
+}
+
+.message {
+    height: 100px;
+}
+
+.contact__button {
+      height: 70px;
+    left: 16px;
+    top: 3090px;
+
+    background: #1A2236;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}

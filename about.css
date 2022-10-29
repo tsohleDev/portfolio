@@ -1,0 +1,76 @@
+.about {
+  display: grid;
+  grid-template-columns: 1;
+  grid-gap: 10px;
+}
+
+.h3{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 1700;
+  font-size: 45px;
+  line-height: 60px;
+  color: #fff;
+}
+
+.about__text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;  
+  color: #1A2236;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button__getCV {
+    height: 70px;
+    left: 16px;
+    top: 3090px;
+
+    background: #1A2236;
+    margin: 20px;
+}
+
+.downlaodIcon {
+    height: 50px;
+}
+
+.languages {
+  left: 16px;
+  top: 3180px;
+  background: #1c528a;
+  padding: 0 50px;
+}
+
+.frameworks {
+  background: #E2505C;
+  padding: 0 50px;
+}
+
+.skills {
+  background: #FEBF52;
+  padding: 0 50px;
+}
+
+.about__li {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 60px;
+  letter-spacing: -0.0525em;
+  
+  color: #FFFFFF;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.pound__logo, .idea__logo, .square__logo {
+  height: 200px;
+  width: 226px;
+  margin-left: 55%;
+}
