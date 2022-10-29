@@ -17,7 +17,8 @@
 
 .headline {
   display: flex;
-  justify-content: left;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .text__article {
@@ -28,12 +29,6 @@
 
 .text {
   margin-left: 30px;
-}
-
-.main__article {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .title {
@@ -50,7 +45,7 @@
 .bio {
   width: 60%;
   height: 84px;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -74,8 +69,7 @@
   margin-left: 100px;
 }
 
-.geometry {
-  width: 702px;
-  height: 877px;
-  margin-left: 70px;
+#geometry {
+  width: 502px;
+  height: 260px;
 }
