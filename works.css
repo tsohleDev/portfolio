@@ -4,18 +4,18 @@
 }
 
 .portfolio {
-  background: #1A2236;
+  background: #1a2236;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(0.5px);
 }
 
 .h2 {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
   line-height: 100%;
-  color: #1A2236;  
+  color: #1a2236;
   padding-left: 20px;
 }
 
@@ -29,14 +29,14 @@
   font-weight: 300;
   font-size: 40px;
   line-height: 50%;
-  color: #FFFFFF;
+  color: #fff;
   padding-left: 8%;
 }
 
 .project__stack {
   width: 87px;
   height: 20px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 10.3334px;
@@ -56,7 +56,7 @@
   line-height: 24px;
   text-align: left;
   background-color: transparent;
-  color: #FFFFFF;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   padding-top: 12px;

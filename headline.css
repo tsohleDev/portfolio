@@ -74,6 +74,7 @@
   height: 260px;
 }
 
-.buttons:hover, .social:hover{
+.buttons:hover,
+.social:hover {
   background-color: #98dede;
 }
