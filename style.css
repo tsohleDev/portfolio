@@ -1,0 +1,75 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.corner__geometry {
+  height: 111px;
+  width: 74px;
+  margin: 0;
+}
+
+.nav__icon {
+  width: 20px;
+  height: 2px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.text__article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.text {
+  margin-left: 30px;
+}
+
+.title {
+  height: 210px;
+  width: 80%;
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 80px;
+  color: #1a2236;
+  margin: 0;
+}
+
+.bio {
+  width: 60%;
+  height: 84px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+.btn {
+  box-sizing: border-box;
+  width: 254px;
+  height: 70px;
+  background: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  margin: 20px;
+  margin-left: 100px;
+}
+
+#geometry {
+  width: 502px;
+  height: 260px;
+}
