@@ -24,11 +24,11 @@
 }
 
 .project__title {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 40px;
-  line-height: 50%;
+  font-size: 30px;
   color: #fff;
   padding-left: 8%;
 }
@@ -72,6 +72,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 0;
 }
 
 .project__button__holder {

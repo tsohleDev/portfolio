@@ -24,7 +24,12 @@
   padding-right: 20px;
 }
 
+.all {
+  padding: 0;
+}
+
 .button__getCV {
+  width: 300px;
   height: 70px;
   left: 16px;
   top: 3090px;
@@ -37,20 +42,19 @@
 }
 
 .languages {
-  left: 16px;
-  top: 3180px;
   background: #1c528a;
-  padding: 0 50px;
 }
 
 .frameworks {
   background: #e2505c;
-  padding: 0 50px;
 }
 
 .skills {
   background: #febf52;
-  padding: 0 50px;
+}
+
+.about__ul {
+  list-style-type: disc;
 }
 
 .about__li {
@@ -68,10 +72,16 @@
   flex-direction: column-reverse;
 }
 
+.about__icon {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+}
+
 .pound__logo,
 .idea__logo,
 .square__logo {
   height: 200px;
   width: 226px;
-  margin-left: 55%;
+  text-align: right;
 }
