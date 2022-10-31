@@ -51,11 +51,11 @@
   margin-left: 7vw;
 }
 .stack2{
-  float: left;
+  float: right;
   margin-left: 30vw;
 }
 .stack3{
-  float: left;
+  float: right;
     margin-left: 30vw;
 }
 .project__button {
@@ -97,3 +97,5 @@
   width: 40.57px;
   height: 27.35px;
 }
+
+/* hello */
