@@ -220,10 +220,10 @@ If you like what you see and have a project you need coded, don’t hesitate and
             <h2 class="h2">Get Started</h2>
             <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
             <form action="" class="contact__form">
-                <input type="text" placeholder="your name" name="name" class="name">
-                <input type="email" placeholder="your email" name="email" class="email">
-                <input type="text" placeholder="Enter your message here..." name="message" id="" class="message">
-                <input type="button" value="Start Collaboration" class="buttons contact__button">
+                <input type="text" required maxlength="30" placeholder="your name" name="name" class="name">
+                <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="your email" name="email" class="email">
+                <textarea type="text" required placeholder="Enter your message here..." name="message" id="" class="message"> </textarea>
+                <input type="button" maxlength="500" value="Start Collaboration" class="buttons contact__button">
             </form>
 
         </section>
@@ -235,14 +235,17 @@ If you like what you see and have a project you need coded, don’t hesitate and
             <img class="footer__button__image" src="./images/download_Resume.svg" alt="download my resume">    
         </button>
        
-        <ul class="socials">
-            <li href=""><img src="./images/stackoverflow.svg" alt="go to my stackoverflow" class="social"></li>
-            <li href=""><img src="./images/github.svg" alt="go to my github" class="social"></li>
-            <li href=""><img src="./images/twitter.svg" alt="go to my twitter" class="social"></li>
-            <li href=""><img src="./images/linkendin.svg" alt="go to my linkendin" class="social"></li>
-            <li href=""><img src="./images/m.svg" alt="go to my M" class="social"></li>
-            <li href=""><img src="./images/fingers.svg" alt="go to my M" class="social"></li>
-        </ul>
+        <nav>
+            <ul class="socials">
+                <li href=""><img src="./images/stackoverflow.svg" alt="go to my stackoverflow" class="social"></li>
+                <li href=""><img src="./images/github.svg" alt="go to my github" class="social"></li>
+                <li href=""><img src="./images/twitter.svg" alt="go to my twitter" class="social"></li>
+                <li href=""><img src="./images/linkendin.svg" alt="go to my linkendin" class="social"></li>
+                <li href=""><img src="./images/m.svg" alt="go to my M" class="social"></li>
+                <li href=""><img src="./images/fingers.svg" alt="go to my M" class="social"></li>
+            </ul>
+        </nav>
+        
     </footer>
 </body>
 </html>
