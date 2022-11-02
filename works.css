@@ -13,7 +13,7 @@
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 10vw;
   line-height: 100%;
   color: #1a2236;
   padding-left: 20px;
@@ -46,6 +46,18 @@
   background-color: #98dede;
 }
 
+.stack1 {
+  float: left;
+  margin-left: 7vw;
+}
+.stack2{
+  float: right;
+  margin-left: 30vw;
+}
+.stack3{
+  float: right;
+    margin-left: 30vw;
+}
 .project__button {
   width: 278px;
   height: 54px;
@@ -69,8 +81,8 @@
 }
 
 .project__stack__container {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   justify-content: space-around;
   padding: 0;
 }
@@ -85,3 +97,5 @@
   width: 40.57px;
   height: 27.35px;
 }
+
+/* hello */

@@ -19,13 +19,29 @@
   grid-gap: 10px;
 }
 
-.name,
+.name{
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #DFDFE0;
+  border-radius: 4px;
+}
+
 .email {
   height: 50px;
+  background: #FFFFFF;
+border: 1px solid #1A2236;
+border-radius: 4px;
 }
 
 .message {
   height: 100px;
+  background: #FFFFFF;
+border: 1px solid #DFDFE0;
+border-radius: 4px;
+}
+
+::placeholder{
+  position: absolute;
 }
 
 .contact__button {
@@ -41,4 +57,9 @@
   line-height: 24px;
   text-align: center;
   color: #fff;
+}
+
+.contact__button:hover{
+  background-color:#fff;
+  color: #1a2236 ;
 }
