@@ -13,10 +13,8 @@
   margin-left: 20px;
 }
 
-.social{
-  width:6vw;
-
-  
+.social {
+  width: 6vw;
 }
 
 .socials {
@@ -41,9 +39,7 @@
 .footer__button__image {
   margin-left: 3vw;
   align-items: center;
-  height: 100%;
   text-align: center;
-  align-items: center;
   align-self: center;
   height: 5vw;
 }
