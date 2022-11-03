@@ -7,26 +7,39 @@
 .footer__button {
   background-color: transparent;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   border: 0;
-  width: 12rem;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.social {
+  width: 6vw;
 }
 
 .socials {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: baseline;
+  margin-bottom: 80px;
 }
 
 .footer__button__text {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 5vw;
+  line-height: 5vw;
   color: #92dcdc;
 }
 
 .footer__button__image {
-  padding-top: 20px;
+  margin-left: 3vw;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  height: 5vw;
 }

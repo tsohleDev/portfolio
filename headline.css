@@ -35,7 +35,7 @@
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 65px;
+  font-size: 10vw;
   color: #1a2236;
   margin: 0;
 }
@@ -73,7 +73,7 @@ ul {
   list-style-type: none;
 }
 
-.buttons:hover,
-.social:hover {
-  background-color: #98dede;
+.buttons:hover {
+  background-color: #fff;
+  color: black;
 }
