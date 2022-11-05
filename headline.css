@@ -114,6 +114,10 @@ a {
     grid-column: 2/3;
   }
 
+  .desktop__header li a {
+    transition: all 0.5s ease-out;
+  }
+
   .header__navication {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -173,5 +177,10 @@ a {
     grid-column: 2/3;
     grid-row: 1/5;
     width: 100%;
+  }
+
+   a:hover,
+   a:focus {
+    font-size: 130%;
   }
 }
