@@ -182,5 +182,6 @@ a {
    a:hover,
    a:focus {
     font-size: 130%;
+    color: #1a2236;
   }
 }
