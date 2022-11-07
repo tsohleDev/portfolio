@@ -10,6 +10,9 @@
 - HTML CSS
 - Figma
 
+## Live Demo
+
+[Live Demo](https://tsohledev.github.io/Portfolio/)
 
 To get a local copy up and running follow these simple example steps.
 
