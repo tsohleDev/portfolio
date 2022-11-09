@@ -252,7 +252,7 @@ a {
 
 .contact__form {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 100%;
   grid-gap: 10px;
 }
 
@@ -438,6 +438,10 @@ a {
 
   .contact__image__right,
   .contact__image__left {
+    display: none;
+  }
+
+  label {
     display: none;
   }
 
@@ -820,38 +824,68 @@ a {
     text-align: justify;
   }
 
-  .name {
+  .contact__form {
+    grid-template-columns: 50% 50%;
+  }
+
+  .label__name {
     grid-column: 1/2;
     grid-row: 1/2;
+  }
+
+  .name {
+    grid-column: 1/2;
+    grid-row: 2/3;
     height: 7vh;
-    width: 90%;
     font-size: 2vw;
+  }
+
+  .label__email {
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 
   .email {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
     height: 7vh;
-    width: 90%;
-    justify-self: flex-end;
-    font-size: 1vw;
+    font-size: 2vw;
+  }
+
+  .label__message {
+    grid-column: 1/3;
+    grid-row: 3/4;
   }
 
   .message {
     grid-column: 1/3;
-    grid-row: 2/3;
+    grid-row: 4/5;
     height: 15vh;
     font-size: 2vw;
   }
 
   .contact__button {
     grid-column: 1/3;
-    grid-row: 3/4;
+    grid-row: 5/6;
     justify-self: center;
     height: 8vh;
     width: 60%;
     font-size: 3vw;
     line-height: 4vh;
+  }
+
+  .red__colour {
+    font-size: 1.5vw;
+    color: red;
+  }
+
+  label {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 2vh;
+    color: #7d7c84;
   }
 
   .footer {
