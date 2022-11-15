@@ -1,6 +1,50 @@
+.position__nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .toolbar {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+}
+
+.toolbar__open {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.toolbar__open__row1 {
+  grid-row: 1/2;
+}
+
+.toolbar__open__row2 {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  justify-self: end;
+  margin: 0 20%;
+}
+
+.toolbar__open__row3 {
+  grid-row: 3/4;
+  grid-column: 1/3;
+  justify-self: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 2.8vh;
+  line-height: 300%;
+  color: #000;
+}
+
+.toolbar__open__row4 {
+  grid-row: 4/5;
+  grid-column: 1/3;
   width: 100%;
 }
 
@@ -8,9 +52,33 @@
   margin: 0;
 }
 
+.menu__button__align {
+  justify-self: end;
+}
+
 .nav__icon {
   width: 20px;
   height: 2px;
+}
+
+#hamburger {
+  margin: 0;
+  padding: 15px 20px 0 0;
+  background-color: #fff;
+  border: 0;
+  font-size: xx-large;
+}
+
+.cross {
+  width: 4vh;
+}
+
+.opened__menu {
+  display: none;
+}
+
+main {
+  margin: 15vh 0 0 0;
 }
 
 .text__article {
@@ -136,6 +204,11 @@ a {
   padding: 0;
 }
 
+.nav__desktoplink {
+  color: #000;
+  font-weight: 400;
+}
+
 .project__button__holder {
   display: flex;
   justify-content: start;
@@ -154,7 +227,7 @@ a {
 .h3 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 1700;
+  font-weight: 700;
   font-size: 45px;
   line-height: 60px;
   color: #fff;
@@ -369,7 +442,15 @@ a {
 }
 
 @media only screen and (max-width: 769px) {
-  .desktop__header {
+  .mobile__visible {
+    display: block;
+  }
+
+  .mobile__invisible {
+    display: none;
+  }
+
+  .mobile__navigation {
     display: none;
   }
 
@@ -390,7 +471,7 @@ a {
 
   .works {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 100%;
   }
 
   .desktop__arrow {
@@ -452,7 +533,15 @@ a {
 }
 
 @media only screen and (min-width: 769px) {
-  .toolbar {
+  .toolbar__open {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .toolbar,
+  .toolbar__open {
     box-shadow: 0 0.5px 0 #dddfe6;
     display: grid;
     grid-template-columns: repeat(3, 33%);
@@ -461,6 +550,10 @@ a {
   }
 
   .mobile__header {
+    display: none;
+  }
+
+  .mobile__photos {
     display: none;
   }
 

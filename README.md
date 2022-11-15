@@ -8,6 +8,7 @@
 ## Built With
 
 - HTML CSS
+- JavaScript
 - Figma
 
 ## Live Demo

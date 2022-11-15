@@ -12,23 +12,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="toolbar">
-        <div class="corner__geometry mobile__header">
-            <img src="./images/corner_geometry.svg">
+    <header class="position__nav toolbar">
+        <div class="corner__geometry  mobile__header">
+            <img class="mobile__visible" src="./images/corner_geometry.svg" alt="">
+            <img class="mobile__invisible" src="./images/corner_open_menu.svg" alt="">
         </div>
         
-        <nav class="drop-down mobile__header">
-            <div class="nav__icon">
-                <img src="./images/hamburger_menu.svg" alt="">
-            </div>
+        <!-- only add the toolbar__open__rowx using javascript -->
+        <nav class="drop-down menu__button__align mobile__header">
+            <button id="hamburger">
+                <i class="fa fa-bars closed__menu" style="color:black;"></i>
+                <img class="opened__menu cross" src="./images/cross.svg" alt="">
+            </button>
         </nav>
 
-        <ul class="desktop__header">
+        <img class="mobile__photos mobile__invisible" style="height: 10vh;" src="./images/nav_dots.svg" alt="">
+
+        <ul class="mobile__invisible desktop__header ">
             <li class="header__navication"><a class="nav__desktoplink" href="#headline">Hello</a></li>
             <li class="header__navication"><a class="nav__desktoplink" href="#works">Works</a></li>
             <li class="header__navication"><a class="nav__desktoplink" href="#about">About</a></li>
             <li class="header__navication"><a class="nav__desktoplink" href="#contact">Contact</a></li>
         </ul>
+
+        <img class="mobile__photos mobile__invisible nav__bottomImage" src="./images/bottom_menu_open.svg" alt="">
     </header>
 
     <main>
@@ -265,7 +272,9 @@ If you like what you see and have a project you need coded, don’t hesitate and
             <li href=""><img src="./images/m.svg" alt="go to my M" class="social"></li>
             <li href=""><img src="./images/fingers.svg" alt="go to my M" class="social"></li>
         </ul>
-        
     </footer>
 </body>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </html>
