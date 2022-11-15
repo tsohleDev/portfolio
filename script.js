@@ -1,5 +1,7 @@
 let hamburger =  document.querySelector('#hamburger')
 let links = document.querySelectorAll('.nav__desktoplink')
+let projectsButtons = document.querySelectorAll('.project__button')
+let popUp = document.querySelector('.portfolio__PopUP')
 
 function invisibleToogle() {
     let menu = document.querySelector('.closed__menu')
@@ -68,3 +70,15 @@ links.forEach(link => {
         invisibleToogle()
     })
 }) 
+
+projectsButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        popUp.style.display = 'flex'
+    })
+})
+
+document.querySelector('.cross__project').addEventListener('click', () => {
+    button.addEventListener('click', () => {
+        popUp.style.display = 'none'
+    })
+})

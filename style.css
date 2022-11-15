@@ -218,6 +218,22 @@ a {
   display: grid;
 }
 
+.portfolio__PopUP {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  top: 10vh;
+  left: 10%;
+  height: auto;
+  width: 80%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.cross__project {
+  align-self: flex-end;
+}
+
 .h3 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
