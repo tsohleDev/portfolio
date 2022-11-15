@@ -227,7 +227,7 @@ a {
 .h3 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 1700;
+  font-weight: 700;
   font-size: 45px;
   line-height: 60px;
   color: #fff;
@@ -471,7 +471,7 @@ a {
 
   .works {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 100%;
   }
 
   .desktop__arrow {
@@ -539,7 +539,7 @@ a {
     width: 100%;
     background-color: #fff;
   }
-  
+
   .toolbar,
   .toolbar__open {
     box-shadow: 0 0.5px 0 #dddfe6;
