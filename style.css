@@ -185,6 +185,10 @@ a {
   padding: 0;
 }
 
+.nav__desktoplink {
+  color: #000;
+}
+
 .project__button__holder {
   display: flex;
   justify-content: start;
