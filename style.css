@@ -15,6 +15,7 @@
 .toolbar__open {
   display: grid;
   width: 100%;
+  height: 100%;
   background-color: #fff;
 }
 
@@ -35,7 +36,7 @@
   justify-self: center;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  text-align: center;
   font-size: 2.8vh;
   line-height: 300%;
   color: #000;
@@ -62,10 +63,14 @@
 
 #hamburger {
   margin: 0;
-  padding: 0;
+  padding: 15px 20px 0 0;
   background-color: #fff;
   border: 0;
   font-size: xx-large;
+}
+
+.cross {
+  width: 4vh;
 }
 
 .opened__menu {
@@ -73,7 +78,7 @@
 }
 
 main {
-  margin: 10vh 0 0 0;
+  margin: 15vh 0 0 0;
 }
 
 .text__article {
@@ -201,6 +206,7 @@ a {
 
 .nav__desktoplink {
   color: #000;
+  font-weight: 400;
 }
 
 .project__button__holder {
@@ -527,7 +533,15 @@ a {
 }
 
 @media only screen and (min-width: 769px) {
-  .toolbar {
+  .toolbar__open {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .toolbar,
+  .toolbar__open {
     box-shadow: 0 0.5px 0 #dddfe6;
     display: grid;
     grid-template-columns: repeat(3, 33%);
