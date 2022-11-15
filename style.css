@@ -1,11 +1,21 @@
+.position__nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .toolbar {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  background-color: #fff;
 }
 
 .toolbar__open {
   display: grid;
+  width: 100%;
+  background-color: #fff;
 }
 
 .toolbar__open__row1 {
@@ -60,6 +70,10 @@
 
 .opened__menu {
   display: none;
+}
+
+main {
+  margin: 10vh 0 0 0;
 }
 
 .text__article {
