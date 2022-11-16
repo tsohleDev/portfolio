@@ -1,7 +1,7 @@
-let hamburger =  document.querySelector('#hamburger')
-let links = document.querySelectorAll('.nav__desktoplink')
-let projectsButtons = document.querySelectorAll('.project__button')
-let popUp = document.querySelector('.portfolio__PopUP')
+const hamburger = document.querySelector('#hamburger');
+const links = document.querySelectorAll('.nav__desktoplink');
+const projectsButtons = document.querySelectorAll('.project__button');
+const popUp = document.querySelector('.portfolio__PopUP');
 
 function invisibleToogle() {
   const menu = document.querySelector('.closed__menu');
@@ -68,14 +68,12 @@ links.forEach((link) => {
   });
 });
 
-projectsButtons.forEach(button => {
+projectsButtons.forEach((button) => {
   button.addEventListener('click', () => {
-      popUp.style.display = 'flex'
-  })
-})
+    popUp.style.display = 'flex';
+  });
+});
 
 document.querySelector('.cross__project').addEventListener('click', () => {
-  button.addEventListener('click', () => {
-      popUp.style.display = 'none'
-  })
-})
+  popUp.style.display = 'none';
+});

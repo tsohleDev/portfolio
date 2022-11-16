@@ -357,7 +357,6 @@ a {
   line-height: 4vh;
   color: red;
   border-radius: 0 0 5px 5px;
-
   box-sizing: border-box;
 }
 
@@ -993,7 +992,7 @@ a {
     font-size: 2vw;
   }
 
-  .error { 
+  .error {
     grid-row: 5/6;
     grid-column: 1/3;
   }
