@@ -204,6 +204,10 @@ a {
   padding: 0;
 }
 
+.stack__popUp {
+  background-color: #fff;
+}
+
 .nav__desktoplink {
   color: #000;
   font-weight: 400;
@@ -228,16 +232,22 @@ a {
   position: fixed;
   display: none;
   flex-direction: column;
-  top: 10vh;
-  left: 10%;
+  align-items: center;
+  top: 0;
+  left: 0;
   height: auto;
-  width: 80%;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   z-index: 1;
 }
 
 .cross__project {
-  align-self: flex-end;
+  align-self: end;
+}
+
+.pop__title {
+  align-items: center;
 }
 
 .h3 {
