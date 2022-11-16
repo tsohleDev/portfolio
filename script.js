@@ -2,6 +2,7 @@ let hamburger =  document.querySelector('#hamburger')
 let links = document.querySelectorAll('.nav__desktoplink')
 let popUp = document.querySelector('.portfolio__PopUP')
 let closePopUp = document.querySelector('#cross__project')
+const sections = document.querySelectorAll('header,#headline, #works, #about, #contact, .footer')
 
 function invisibleToogle() {
   const menu = document.querySelector('.closed__menu');
@@ -104,7 +105,8 @@ projectsInfo = [{
 let projectsButtons = document.querySelectorAll('.project__button')
 projectsButtons.forEach(button => {
   button.addEventListener('click', () => {
-      popUp.style.display = 'flex'
+      popUp.style.display = 'grid'
+      sections.forEach(section => section.classList.add('pop__hide'))
 
       let h1 = document.querySelector('.pop__title')
       let picture = document.querySelector('.image__project')
@@ -117,5 +119,6 @@ projectsButtons.forEach(button => {
 })
 
 closePopUp.addEventListener('click', () => {
+      sections.forEach(section => section.classList.remove('pop__hide'))
       popUp.style.display = 'none'
 })
