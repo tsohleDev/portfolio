@@ -1,5 +1,7 @@
 const hamburger = document.querySelector('#hamburger');
 const links = document.querySelectorAll('.nav__desktoplink');
+const projectsButtons = document.querySelectorAll('.project__button');
+const popUp = document.querySelector('.portfolio__PopUP');
 
 function invisibleToogle() {
   const menu = document.querySelector('.closed__menu');
@@ -44,7 +46,6 @@ hamburger.addEventListener('click', () => {
 
   if (document.querySelector('.toolbar') !== null) {
     document.querySelector('.toolbar').classList.replace('toolbar', 'toolbar__open');
-
     document.querySelector('.corner__geometry').classList.add('toolbar__open__row1');
     document.querySelector('.drop-down').classList.add('toolbar__open__row1');
     document.querySelector('.mobile__photos').classList.add('toolbar__open__row2');
@@ -65,4 +66,14 @@ links.forEach((link) => {
   link.addEventListener('click', () => {
     invisibleToogle();
   });
+});
+
+projectsButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    popUp.style.display = 'flex';
+  });
+});
+
+document.querySelector('.cross__project').addEventListener('click', () => {
+  popUp.style.display = 'none';
 });
