@@ -4,7 +4,7 @@ const emailError = document.querySelector(".error");
 
 form.addEventListener("click", (event) => {
   if (email.validity.typeMismatch) {
-    emailError.textContent = "Please enter a valid email adress in lower case";
+    emailError.textContent = "Please enter a valid email address in lower case";
   } else {
     emailError.textContent = "";
   }
