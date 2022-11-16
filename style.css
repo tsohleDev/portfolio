@@ -345,6 +345,26 @@ a {
   grid-gap: 10px;
 }
 
+.error {
+  justify-self: center;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3vh;
+  line-height: 4vh;
+  color: red;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
 .name {
   height: 50px;
   background: #fff;
@@ -973,9 +993,14 @@ a {
     font-size: 2vw;
   }
 
+  .error { 
+    grid-row: 5/6;
+    grid-column: 1/3;
+  }
+
   .contact__button {
     grid-column: 1/3;
-    grid-row: 5/6;
+    grid-row: 6/7;
     justify-self: center;
     height: 8vh;
     width: 60%;

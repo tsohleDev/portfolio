@@ -247,10 +247,11 @@ If you like what you see and have a project you need coded, don’t hesitate and
                     <label class="label__name label" for="name">Your name <span class="red__colour">*</span></label>
                     <input type="text" required maxlength="30" id="name" placeholder="write your name" name="name" class="name">
                     <label class="label__email" for="email">Your email <span class="red__colour">*</span></label>
-                    <input type="email" required pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="write your email" id="email" name="email" class="email">
+                    <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="write your email" id="email" name="email" class="email">
                     <label class="label__message" for="message">Message <span class="red__colour">*</span></label>
                     <textarea maxlength="500" required placeholder="Enter your message here..." name="message" id="message" class="message"></textarea>
-                    <input type="submit" value="Start Collaboration" class="buttons contact__button">
+                    <span class="error" aria-live="polite"></span>
+                    <input type="submit" id="submit" value="Start Collaboration" class="buttons contact__button">
                 </form>
             </div>
 
@@ -299,5 +300,6 @@ If you like what you see and have a project you need coded, don’t hesitate and
 </body>
 
 <script src="script.js"></script>
+<script src="./formValidation.js"></script>
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </html>
