@@ -3,6 +3,7 @@ let links = document.querySelectorAll('.nav__desktoplink')
 let popUp = document.querySelector('.portfolio__PopUP')
 let closePopUp = document.querySelector('#cross__project')
 const sections = document.querySelectorAll('header,#headline, #works, #about, #contact, .footer')
+const main = document.querySelector('main')
 
 function invisibleToogle() {
   const menu = document.querySelector('.closed__menu');
@@ -73,32 +74,38 @@ projectsInfo = [{
   name: 'Project name goes here',
   stack: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   url: './images/one.svg',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'
+  descriptionOne: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam  , quis nostrud exercitation ullamco laboris nisi',
+  descriptionTwo: 'Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'
 },{
   name: 'Project name goes here',
   stack: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   url: './images/two.svg',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'
+  descriptionOne: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam  , quis nostrud exercitation ullamco laboris nisi',
+  descriptionTwo: 'Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'
 },{
   name: 'Project name goes here',
   stack: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   url: './images/three.svg',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'
+  descriptionOne: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam  , quis nostrud exercitation ullamco laboris nisi',
+  descriptionTwo: 'Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'
 },{
   name: 'Project name goes here',
   stack: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   url: './images/four.svg',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'
+  descriptionOne: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam  , quis nostrud exercitation ullamco laboris nisi',
+  descriptionTwo: 'Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'
 },{
   name: 'Project name goes here',
   stack: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   url: './images/five.svg',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'
+  descriptionOne: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam  , quis nostrud exercitation ullamco laboris nisi',
+  descriptionTwo: 'Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'
 },{
   name: 'Project name goes here',
   stack: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   url: './images/six.svg',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'
+  descriptionOne: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam  , quis nostrud exercitation ullamco laboris nisi',
+  descriptionTwo: 'Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'
 },
 ]
 
@@ -107,18 +114,25 @@ projectsButtons.forEach(button => {
   button.addEventListener('click', () => {
       popUp.style.display = 'grid'
       sections.forEach(section => section.classList.add('pop__hide'))
+      main.classList.replace('main', 'main__pop')
 
       let h1 = document.querySelector('.pop__title')
-      let picture = document.querySelector('.image__project')
-      let p = document.querySelector('.text__project')
+      let pictures = document.querySelectorAll('.image__project')
+      let pOne = document.querySelector('.text__pop__one')
+      let pTwo = document.querySelector('.text__pop__two')
 
       h1.innerHTML = projectsInfo[0].name
-      picture.src = projectsInfo[0].url
-      p.innerHTML = projectsInfo[0].description
+      pictures.forEach(picture => {
+        picture.src = projectsInfo[0].url
+      }) 
+      pOne.innerHTML = projectsInfo[0].descriptionOne
+      pTwo.innerHTML = projectsInfo[0].descriptionOne
   })
 })
 
 closePopUp.addEventListener('click', () => {
       sections.forEach(section => section.classList.remove('pop__hide'))
+      main.classList.replace('main__pop', 'main')
+  
       popUp.style.display = 'none'
 })
