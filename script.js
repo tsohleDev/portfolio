@@ -1,7 +1,7 @@
 const hamburger = document.querySelector('#hamburger');
 const links = document.querySelectorAll('.nav__desktoplink');
 const projectsButtons = document.querySelectorAll('.project__button');
-const popUp = document.querySelector('.portfolio__PopUP');
+const popUp = document.Selector('.portfolio__PopUP');
 
 function invisibleToogle() {
   const menu = document.querySelector('.closed__menu');
@@ -33,7 +33,7 @@ function invisibleToogle() {
   }
 }
 
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('onclick', () => {
   const menu = document.querySelector('.closed__menu');
   const newMenu = document.querySelector('.opened__menu');
   menu.classList.replace('closed__menu', 'opened__menu');
