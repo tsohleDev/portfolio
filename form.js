@@ -34,17 +34,3 @@ const stringfyForm = () => {
   localStorage.setItem('form', data)
 }
 
-name_.addEventListener('input', () => {
-  formData.name = name_.value
-  stringfyForm()
-})
-email.addEventListener('input', () => {
-  formData.email = email.value
-  stringfyForm()
-})
-message.addEventListener('input', () => {
-  formData.message = message.value
-  stringfyForm()
-})
-
-loadFormData()
