@@ -7,6 +7,7 @@
     <title>Portfolio : Tsohle Mokhemisi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
@@ -38,7 +39,7 @@
         <img class="mobile__photos mobile__invisible nav__bottomImage" src="./images/bottom_menu_open.svg" alt="">
     </header>
 
-    <main>
+    <main class="main">
         <section id="headline" class="headline">
             <article class="text__article">
                 <h1 class="title">
@@ -260,25 +261,64 @@ If you like what you see and have a project you need coded, don’t hesitate and
 
         <section class="portfolio__PopUP">
             <button id="cross__project">
-                <i class="fa fa-close" style="color:black;"></i>
+                <img class="cross" src="./images/cross.svg" alt="">
             </button>
 
-            <h2>Project</h2>
-            <img src="./images/two.svg" style="height: 30%;" alt="">
+            <ul class="stack__popUp">
+                <li class="pop__stack__element">HTML/CSS</li>
+                <li class="pop__stack__element">Ruby on rails</li>
+                <li class="pop__stack__element">JavaScript</li>
+            </ul>
+            
+            <h1 class="pop__title">Project</h1>
+            <div class="stack__popUp">
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            </div>
 
-                Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+            <div class="pop__images">
+                <img class="image__project big__image" src="" alt="">
+                <button class="pop__images__nav pop__display__left pop__images__left">
+                    <i class="fa fa-regular fa-chevron-left"></i>
+                </button>
+                <button class="pop__images__nav pop__display__right pop__images__right">
+                    <i class="fa fa-regular fa-chevron-right"></i>
+                </button>
 
-            <button class="buttons footer__button">
-                <h4 class="">See live</h4>  
-                <img class="footer__button__image" src="./images/download_Resume.svg" alt="download my resume">    
-            </button>
+                <img class="image__project small__image" src="" alt="">
+                <img class="image__project small__image" src="" alt="">
+                <img class="image__project small__image" src="" alt="">
+                <img class="image__project small__image" src="" alt="">
+            </div>
 
-            <button class="buttons footer__button">
-                <h4 class="">See Source</h4>  
-                <img class="footer__button__image" src="./images/download_Resume.svg" alt="download my resume">    
-            </button>
+            <p class="text__pop__one"></p>
+
+            <p class="text__pop__two"></p>
+
+            <div class="pop__info__buttons">
+                <button class="buttons__inverse see__pop">
+                    See live  
+                    <i class="material-symbols-outlined">
+                        open_in_new
+                    </i>
+                </button>
+    
+                <button class="buttons__inverse see__pop">
+                    See Source 
+                    <i class="fa fa-brands fa-github"></i>
+                </button>
+            </div>
+
+            <div class="navigation__buttons">
+                <button class="buttons__inverse nav__pop__prev nav__pop__down">
+                    <i class="fa fa-solid fa-arrow-left"></i>
+                    previous project
+                </button>
+
+                <button class="buttons__inverse nav__pop__next nav__pop__down">
+                    next project
+                    <i class="fa fa-light fa-arrow-right"></i>
+                </button>
+            </div>
         </section>
     </main>
 
