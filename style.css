@@ -166,52 +166,51 @@ a {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 5vw;
+  font-weight: 100;
+  font-size: 8vw;
   color: #fff;
-  padding-left: 8%;
 }
 
 .project__stack {
-  width: 87px;
-  height: 20px;
+  width: 22vw;
+  height: 4vh;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 10.3334px;
+  font-size: 3vw;
   line-height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #98dede;
+  box-shadow: #a1a8ff 1px 1px 1px 1px;
 }
 
 .project__button {
-  width: 278px;
-  height: 54px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 26px;
-  line-height: 24px;
   text-align: left;
   background-color: transparent;
   color: #fff;
+  border: white solid 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .project__info {
-  background: #1a2236;
+  background: #0a132a;;
   opacity: 0.9;
 }
 
 .project__stack__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0;
+  margin: 0 0 2vh;
 }
 
 .nav__desktoplink {
@@ -222,7 +221,7 @@ a {
 .project__button__holder {
   display: flex;
   justify-content: start;
-  margin-left: 8%;
+  margin: 0 0 2vh;
 }
 
 .arrow {
@@ -257,7 +256,7 @@ a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 3vw;
+  font-size: 5vw;
   line-height: 4vh;
   color: #1a2236;
   padding-left: 20px;
@@ -695,6 +694,7 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
+    padding: 0 10vw;
   }
 
   .portfolio {
@@ -728,6 +728,11 @@ a {
 
   .about__deco {
     display: none;
+  }
+
+  .button__getCV {
+    width: 90%;
+    height: 7vh;
   }
 
   .contact__image__right,
