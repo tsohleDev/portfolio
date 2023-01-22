@@ -83,7 +83,6 @@ html, body {
 }
 
 .main {
-  height: 100%;
   margin: 11vh 0 0 0;
 }
 
@@ -415,10 +414,10 @@ a {
 .footer__button {
   background-color: transparent;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
   border: 0;
-  width: 100%;
-  margin-left: 20px;
+  height: 5vh;
+  width: 50vw;
 }
 
 .social {
@@ -429,10 +428,8 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin-left: 20px;
-  margin-right: 20px;
   align-items: baseline;
-  margin-bottom: 80px;
+  margin: 0;
 }
 
 .footer__button__text {
@@ -747,6 +744,7 @@ a {
   .footer {
     display: flex;
     flex-direction: column;
+    padding: 2vh 8vw;
   }
 
   .portfolio__PopUP {
@@ -1349,9 +1347,5 @@ a {
 }
 
 .pop__hide {
-  display: none;
-}
-
-.footer {
   display: none;
 }
