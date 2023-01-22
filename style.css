@@ -495,6 +495,11 @@ a {
   grid-row: 2/3;
 }
 
+.material-symbols-outlined {
+  font-size: 12vw;
+  color: #0005;
+}
+
 .pop__images__nav {
   grid-row: 1/2;
   width: 30%;
@@ -550,7 +555,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 25px 0;
+  margin: 1vh 0 2vh;
 }
 
 .pop__stack__element {
@@ -730,6 +735,11 @@ a {
   .button__getCV {
     width: 90%;
     height: 7vh;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10vw;
   }
 
   .contact__image__right,
@@ -762,6 +772,17 @@ a {
     grid-row: 2/3;
     font-size: 6.4vw;
     line-height: 6vh;
+    margin: 0;
+  }
+
+  .icon {
+    color: inherit;
+    font-size: inherit;
+  }
+
+  .arrow {
+    align-self: baseline;
+    font-size: 11vw;
   }
 
   .stack__popUp {
@@ -777,24 +798,23 @@ a {
   .text__pop__one {
     grid-column: 1/2;
     grid-row: 5/6;
-    margin: 7vh 0 8vh 0;
+    margin: 3vh 0 4vh 0;
     font-size: 3.5vw;
   }
 
   .see__pop {
-    width: 51vw;
-    height: 10vh;
+    width: 100%;
+    height: 5vh;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 5vh;
-    line-height: 4vh;
+    font-size: 4vh;
     text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: 1px solid;
-    margin: 5vh 0 0 0;
+    margin: 1.5vh 0;
   }
 
   .text__pop__two {
@@ -806,6 +826,10 @@ a {
 
   .pop__stack__element {
     width: 23vw;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 3vw;
     line-height: 5vh;
     margin-right: 0;
@@ -819,6 +843,7 @@ a {
     flex-direction: column;
     grid-column: 1/2;
     grid-row: 7/8;
+    margin: 0 10vw;
   }
 }
 
