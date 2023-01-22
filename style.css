@@ -962,43 +962,133 @@ a {
   }
 
   .hover__one {
-    height: 11vh;
+    position: relative;
+    top: 0vh;
+    padding: 0 5vw;
   }
 
-  .hover__two {
-    height: 11vh;
+  .hover__one h3 {
+    font-size: 5vw;
   }
 
-  .hover__three {
-    height: 11vh;
-  }
-
-  .hover__four {
-    height: 11vh;
-  }
-
-  .hover__five {
-    height: 15vh;
-  }
-
-  .hover__six {
-    height: 11vh;
-  }
-
-  .project__info:hover {
-    display: block;
-  }
-
-  .project__stack {
+  .hover__one ul li {
     width: 20%;
-    height: 3em;
+    height: 2em;
     font-weight: 300;
     font-size: 1.5vw;
     line-height: 80%;
   }
 
-  .project__button__holder {
-    margin-left: 6.5%;
+  .hover__two {
+    position: relative;
+    top: -3vh;
+    height: fit-content;
+    padding: 0 2vw;
+  }
+
+  .hover__two h3 {
+    font-size: 2.5vw;
+  }
+
+  .hover__two ul li {
+    width: 25%;
+    height: 2em;
+    font-weight: 300;
+    font-size: 1vw;
+  }
+
+  .hover__two div button {
+    height: 4vh;
+  }
+
+  .hover__three {
+    position: relative;
+    top: -3vh;
+    height: fit-content;
+    padding: 0 2vw;
+  }
+
+  .hover__three h3 {
+    font-size: 2.5vw;
+  }
+
+  .hover__three ul li {
+    width: 25%;
+    height: 2em;
+    font-weight: 300;
+    font-size: 1vw;
+  }
+
+  .hover__three div button {
+    height: 4vh;
+  }
+
+  .hover__four {
+    position: relative;
+    top: 0;
+    height: fit-content;
+    padding: 0 4vw;
+  }
+
+  .hover__four h3 {
+    font-size: 5vw;
+  }
+
+  .hover__four ul li {
+    width: 25%;
+    height: 2.5em;
+    font-weight: 300;
+    font-size: 1.5vw;
+  }
+
+  .hover__four div button {
+    height: 6vh;
+  }
+
+  .hover__five {
+    position: relative;
+    height: fit-content;
+    padding: 0 2vw;
+  }
+
+  .hover__five h3 {
+    font-size: 2.5vw;
+  }
+
+  .hover__five ul li {
+    width: 25%;
+    height: 2em;
+    font-weight: 300;
+    font-size: 1vw;
+  }
+
+  .hover__five div button {
+    height: 4vh;
+  }
+
+  .hover__six {
+    position: relative;
+    height: fit-content;
+    padding: 0 2vw;
+  }
+
+  .hover__six h3 {
+    font-size: 2.5vw;
+  }
+
+  .hover__six ul li {
+    width: 25%;
+    height: 2em;
+    font-weight: 300;
+    font-size: 1vw;
+  }
+
+  .hover__six div button {
+    height: 4vh;
+  }
+
+  .project__info:hover {
+    display: block;
   }
 
   .project__button {
@@ -1013,7 +1103,8 @@ a {
   }
 
   .arrow {
-    display: none;
+    display: flex;
+    align-items: center;
   }
 
   .works {
@@ -1087,7 +1178,27 @@ a {
     width: 100%;
   }
 
-  .project__photo:hover + .project__info {
+  .project__onePhoto:hover + .hover__one {
+    display: block;
+  }
+
+  .project__twoPhoto:hover + .hover__two {
+    display: block;
+  }
+
+  .project__threePhoto:hover + .hover__three {
+    display: block;
+  }
+
+  .project__fourPhoto:hover + .hover__four {
+    display: block;
+  }
+
+  .project__fivePhoto:hover + .hover__five {
+    display: block;
+  }
+
+  .project__sixPhoto:hover + .hover__six {
     display: block;
   }
 
@@ -1146,6 +1257,10 @@ a {
     margin: 15% 5vw;
   }
 
+  .about__ul {
+    padding-left: 1vw;
+  }
+
   .about__article {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -1158,6 +1273,19 @@ a {
     color: #1a2236;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .button__getCV {
+    color: #fff;
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon {
+    color: inherit;
+    font-size: 4vw;
   }
 
   .all {
@@ -1331,7 +1459,7 @@ a {
   .footer {
     display: flex;
     height: 5%;
-    padding: 0 5vw;
+    padding: 2vh 2vw 1vh;
   }
 
   .footer__button {
