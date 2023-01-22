@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 .position__nav {
   position: fixed;
   top: 0;
@@ -10,6 +14,7 @@
   justify-content: space-between;
   width: 100%;
   background-color: #fff;
+  box-shadow: #edf0ef 1px 1px 1px 1px;
 }
 
 .toolbar__open {
@@ -78,7 +83,8 @@
 }
 
 .main {
-  margin: 15vh 0 0 0;
+  height: 100%;
+  margin: 11vh 0 0 0;
 }
 
 .main__pop {
@@ -87,9 +93,9 @@
 }
 
 .text__article {
+  height: 45vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .text {
@@ -100,34 +106,33 @@
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 10vw;
+  font-size: 7vh;
   color: #1a2236;
   margin: 0;
 }
 
 .bio {
-  width: 60%;
+  width: 95%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 2.5vh;
+  line-height: 3vh;
   letter-spacing: -0.01em;
   color: #1a2236;
 }
 
 .btn {
   box-sizing: border-box;
-  width: 254px;
-  height: 70px;
+  height: 10vh;
   background: #1a2236;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 4vh;
   line-height: 27px;
   color: #fff;
-  margin: 20px;
+  margin: 5vh 4vw;
 }
 
 #geometry {
@@ -298,6 +303,7 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 29px;
+  margin: 0 5vw;
   line-height: 60px;
   letter-spacing: -0.0525em;
   color: #fff;
@@ -665,6 +671,7 @@ a {
   }
 
   .headline {
+    height: 88%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -861,6 +868,7 @@ a {
   }
 
   .bio {
+    width: 60%;
     font-size: 1vw;
     line-height: 3vh;
     letter-spacing: -0.01em;
@@ -920,25 +928,37 @@ a {
   }
 
   .project__info {
-    animation-duration: 3s;
-    animation-name: projectInfoSlider;
+    grid-row: 2/4;
+    grid-column: 1/2;
     display: none;
   }
 
-  @keyframes projectInfoSlider {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 100%;
-    }
+  .hover__one {
+    height: 11vh;
   }
 
-  .visible__project {
+  .hover__two {
+    height: 11vh;
+  }
+
+  .hover__three {
+    height: 11vh;
+  }
+
+  .hover__four {
+    height: 11vh;
+  }
+
+  .hover__five {
+    height: 15vh;
+  }
+
+  .hover__six {
+    height: 11vh;
+  }
+
+  .project__info:hover {
     display: block;
-    grid-row: 2/4;
-    grid-column: 1/2;
   }
 
   .project__stack {
@@ -1037,6 +1057,10 @@ a {
     grid-row: 1/4;
     grid-column: 1/2;
     width: 100%;
+  }
+
+  .project__photo:hover + .project__info {
+    display: block;
   }
 
   .project__two {
@@ -1313,6 +1337,16 @@ a {
   }
 }
 
+@media only screen and (max-width: 376px){
+  .text__article {
+    height: 40vh;
+  }
+}
+
 .pop__hide {
+  display: none;
+}
+
+.footer {
   display: none;
 }
