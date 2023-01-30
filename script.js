@@ -72,38 +72,46 @@ links.forEach((link) => {
 
 const projectsInfo = [{
   name: 'Project name goes here',
-  stack: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-  url: './images/one.svg',
-  descriptionOne: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam  , quis nostrud exercitation ullamco laboris nisi',
-  descriptionTwo: 'Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  stack: ['HTML/CSS', 'JavaScript'],
+  url: './images/desktop empty.png',
+  slide: ['./images/one one.svg', './images/one two.svg', './images/one three.svg', './images/one two.svg'],
+  descriptionOne: 'Leader board is a website that uses a API to show and store score of different clients across the world',
+  descriptionTwo: 'It is build with vanilla Javascript and bundled with webpack. It stores a score of a user on a cloud ran and mantained by google, Its a demostration of front end API utilazation.',
+  live: 'https://tsohle.me/Leaderboard/dist',
+  source: 'https://github.com/tsohleDev/Leaderboard',
 }, {
   name: 'Project name goes here',
   stack: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   url: './images/two.svg',
+  slide: ['./images/two.svg', './images/two.svg', './images/two.svg', './images/two.svg'],
   descriptionOne: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam  , quis nostrud exercitation ullamco laboris nisi',
   descriptionTwo: 'Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
 }, {
   name: 'Project name goes here',
   stack: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   url: './images/three.svg',
+  slide: ['./images/three.svg', './images/three.svg', './images/three.svg', './images/three.svg'],
   descriptionOne: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam  , quis nostrud exercitation ullamco laboris nisi',
   descriptionTwo: 'Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
 }, {
   name: 'Project name goes here',
   stack: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   url: './images/four.svg',
+  slide: ['./images/four.svg', './images/four.svg', './images/four.svg', './images/four.svg'],
   descriptionOne: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam  , quis nostrud exercitation ullamco laboris nisi',
   descriptionTwo: 'Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
 }, {
   name: 'Project name goes here',
   stack: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   url: './images/five.svg',
+  slide: ['./images/five.svg', './images/five.svg', './images/five.svg', './images/five.svg'],
   descriptionOne: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam  , quis nostrud exercitation ullamco laboris nisi',
   descriptionTwo: 'Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
 }, {
   name: 'Project name goes here',
   stack: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   url: './images/six.svg',
+  slide: ['./images/six.svg', './images/six.svg', './images/six.svg', './images/six.svg'],
   descriptionOne: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam  , quis nostrud exercitation ullamco laboris nisi',
   descriptionTwo: 'Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
 },
@@ -120,17 +128,23 @@ let projectIndex = 0;
 let imageIndex = 0;
 
 const loadModel = (i) => {
+  const ruby = document.querySelector('.ruby');
+  if (i === 0) { ruby.style.display = 'none'; } else { ruby.style.display = 'flex'; }
   const h1 = document.querySelector('.pop__title');
-  const pictures = document.querySelectorAll('.image__project');
+  const pictures = document.querySelectorAll('.small__image');
   const pOne = document.querySelector('.text__pop__one');
   const pTwo = document.querySelector('.text__pop__two');
+  const live = document.querySelector('.live__link');
+  live.href = projectsInfo[i].live;
 
+  const source = document.querySelector('.source__link');
+  source.href = projectsInfo[i].source;
   h1.innerHTML = projectsInfo[i].name;
-  pictures.forEach((picture) => {
-    picture.src = projectsInfo[i].url;
-  });
+  for (let j = 0; j < pictures.length; j += 1) {
+    pictures[j].src = projectsInfo[i].slide[j];
+  }
   pOne.innerHTML = projectsInfo[i].descriptionOne;
-  pTwo.innerHTML = projectsInfo[i].descriptionOne;
+  pTwo.innerHTML = projectsInfo[i].descriptionTwo;
   projectIndex = i;
 };
 const selectImage = (i = 0) => {
@@ -139,6 +153,8 @@ const selectImage = (i = 0) => {
     prvs.classList.remove('select__image');
   }
   smallImages[i].classList.add('select__image');
+  const big = document.querySelector('.big__image');
+  big.src = smallImages[i].src;
 };
 projectsButtons.forEach((button, i) => {
   button.addEventListener('click', () => {
