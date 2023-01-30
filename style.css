@@ -212,6 +212,10 @@ a {
   margin: 0 0 2vh;
 }
 
+.one__stacks {
+  width: 45%;
+}
+
 .nav__desktoplink {
   color: #000;
   font-weight: 400;
@@ -546,7 +550,7 @@ a {
   font-size: 4vw;
   line-height: 80%;
   color: #1a2236;
-  margin: 20px 0 0 0;
+  margin: 20px 0;
 }
 
 .stack__popUp {
@@ -1285,7 +1289,7 @@ a {
 
   .icon {
     color: inherit;
-    font-size: 4vw;
+    font-size: 2vw;
   }
 
   .all {
