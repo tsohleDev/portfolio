@@ -129,20 +129,18 @@ let imageIndex = 0;
 
 const loadModel = (i) => {
   const ruby = document.querySelector('.ruby');
-  if (i === 0) { ruby.style.display = 'none'; }
-  else { ruby.style.display = 'flex'; }
+  if (i === 0) { ruby.style.display = 'none'; } else { ruby.style.display = 'flex'; }
   const h1 = document.querySelector('.pop__title');
   const pictures = document.querySelectorAll('.small__image');
   const pOne = document.querySelector('.text__pop__one');
   const pTwo = document.querySelector('.text__pop__two');
   const live = document.querySelector('.live__link');
   live.href = projectsInfo[i].live;
-  
+
   const source = document.querySelector('.source__link');
   source.href = projectsInfo[i].source;
-  console.log(live, source);
   h1.innerHTML = projectsInfo[i].name;
-  for (let j = 0; j < pictures.length; j++) {
+  for (let j = 0; j < pictures.length; j += 1) {
     pictures[j].src = projectsInfo[i].slide[j];
   }
   pOne.innerHTML = projectsInfo[i].descriptionOne;

@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -200,7 +201,7 @@ a {
 }
 
 .project__info {
-  background: #0a132a;;
+  background: #0a132a;
   opacity: 0.9;
 }
 
@@ -967,7 +968,7 @@ a {
 
   .hover__one {
     position: relative;
-    top: 0vh;
+    top: 0;
     padding: 0 5vw;
   }
 
@@ -986,7 +987,7 @@ a {
   .hover__two {
     position: relative;
     top: -3vh;
-    height: fit-content;
+    height: auto;
     padding: 0 2vw;
   }
 
@@ -1008,7 +1009,7 @@ a {
   .hover__three {
     position: relative;
     top: -3vh;
-    height: fit-content;
+    height: auto;
     padding: 0 2vw;
   }
 
@@ -1030,7 +1031,7 @@ a {
   .hover__four {
     position: relative;
     top: 0;
-    height: fit-content;
+    height: auto;
     padding: 0 4vw;
   }
 
@@ -1051,7 +1052,7 @@ a {
 
   .hover__five {
     position: relative;
-    height: fit-content;
+    height: auto;
     padding: 0 2vw;
   }
 
@@ -1072,7 +1073,7 @@ a {
 
   .hover__six {
     position: relative;
-    height: fit-content;
+    height: auto;
     padding: 0 2vw;
   }
 
@@ -1497,7 +1498,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 376px){
+@media only screen and (max-width: 376px) {
   .text__article {
     height: 40vh;
   }
