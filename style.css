@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 .position__nav {
   position: fixed;
   top: 0;
@@ -10,6 +15,7 @@
   justify-content: space-between;
   width: 100%;
   background-color: #fff;
+  box-shadow: #edf0ef 1px 1px 1px 1px;
 }
 
 .toolbar__open {
@@ -78,7 +84,7 @@
 }
 
 .main {
-  margin: 15vh 0 0 0;
+  margin: 11vh 0 0 0;
 }
 
 .main__pop {
@@ -87,9 +93,9 @@
 }
 
 .text__article {
+  height: 45vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .text {
@@ -100,34 +106,33 @@
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 10vw;
+  font-size: 7vh;
   color: #1a2236;
   margin: 0;
 }
 
 .bio {
-  width: 60%;
+  width: 95%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 2.5vh;
+  line-height: 3vh;
   letter-spacing: -0.01em;
   color: #1a2236;
 }
 
 .btn {
   box-sizing: border-box;
-  width: 254px;
-  height: 70px;
+  height: 10vh;
   background: #1a2236;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 4vh;
   line-height: 27px;
   color: #fff;
-  margin: 20px;
+  margin: 5vh 4vw;
 }
 
 #geometry {
@@ -161,52 +166,55 @@ a {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 5vw;
+  font-weight: 100;
+  font-size: 8vw;
   color: #fff;
-  padding-left: 8%;
 }
 
 .project__stack {
-  width: 87px;
-  height: 20px;
+  width: 22vw;
+  height: 4vh;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 10.3334px;
+  font-size: 3vw;
   line-height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #98dede;
+  box-shadow: #a1a8ff 1px 1px 1px 1px;
 }
 
 .project__button {
-  width: 278px;
-  height: 54px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 26px;
-  line-height: 24px;
   text-align: left;
   background-color: transparent;
   color: #fff;
+  border: white solid 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .project__info {
-  background: #1a2236;
+  background: #0a132a;
   opacity: 0.9;
 }
 
 .project__stack__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0;
+  margin: 0 0 2vh;
+}
+
+.one__stacks {
+  width: 45%;
 }
 
 .nav__desktoplink {
@@ -217,7 +225,7 @@ a {
 .project__button__holder {
   display: flex;
   justify-content: start;
-  margin-left: 8%;
+  margin: 0 0 2vh;
 }
 
 .arrow {
@@ -252,7 +260,7 @@ a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 3vw;
+  font-size: 5vw;
   line-height: 4vh;
   color: #1a2236;
   padding-left: 20px;
@@ -298,6 +306,7 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 29px;
+  margin: 0 5vw;
   line-height: 60px;
   letter-spacing: -0.0525em;
   color: #fff;
@@ -410,10 +419,10 @@ a {
 .footer__button {
   background-color: transparent;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
   border: 0;
-  width: 100%;
-  margin-left: 20px;
+  height: 5vh;
+  width: 50vw;
 }
 
 .social {
@@ -424,10 +433,8 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin-left: 20px;
-  margin-right: 20px;
   align-items: baseline;
-  margin-bottom: 80px;
+  margin: 0;
 }
 
 .footer__button__text {
@@ -493,6 +500,11 @@ a {
   grid-row: 2/3;
 }
 
+.material-symbols-outlined {
+  font-size: 12vw;
+  color: #0005;
+}
+
 .pop__images__nav {
   grid-row: 1/2;
   width: 30%;
@@ -539,7 +551,7 @@ a {
   font-size: 4vw;
   line-height: 80%;
   color: #1a2236;
-  margin: 20px 0 0 0;
+  margin: 20px 0;
 }
 
 .stack__popUp {
@@ -548,7 +560,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 25px 0;
+  margin: 1vh 0 2vh;
 }
 
 .pop__stack__element {
@@ -665,6 +677,7 @@ a {
   }
 
   .headline {
+    height: 88%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -688,6 +701,7 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
+    padding: 0 10vw;
   }
 
   .portfolio {
@@ -723,6 +737,16 @@ a {
     display: none;
   }
 
+  .button__getCV {
+    width: 90%;
+    height: 7vh;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10vw;
+  }
+
   .contact__image__right,
   .contact__image__left {
     display: none;
@@ -735,6 +759,7 @@ a {
   .footer {
     display: flex;
     flex-direction: column;
+    padding: 2vh 8vw;
   }
 
   .portfolio__PopUP {
@@ -752,6 +777,17 @@ a {
     grid-row: 2/3;
     font-size: 6.4vw;
     line-height: 6vh;
+    margin: 0;
+  }
+
+  .icon {
+    color: inherit;
+    font-size: inherit;
+  }
+
+  .arrow {
+    align-self: baseline;
+    font-size: 11vw;
   }
 
   .stack__popUp {
@@ -767,24 +803,23 @@ a {
   .text__pop__one {
     grid-column: 1/2;
     grid-row: 5/6;
-    margin: 7vh 0 8vh 0;
+    margin: 3vh 0 4vh 0;
     font-size: 3.5vw;
   }
 
   .see__pop {
-    width: 51vw;
-    height: 10vh;
+    width: 100%;
+    height: 5vh;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 5vh;
-    line-height: 4vh;
+    font-size: 4vh;
     text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: 1px solid;
-    margin: 5vh 0 0 0;
+    margin: 1.5vh 0;
   }
 
   .text__pop__two {
@@ -796,6 +831,10 @@ a {
 
   .pop__stack__element {
     width: 23vw;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 3vw;
     line-height: 5vh;
     margin-right: 0;
@@ -809,6 +848,7 @@ a {
     flex-direction: column;
     grid-column: 1/2;
     grid-row: 7/8;
+    margin: 0 10vw;
   }
 }
 
@@ -861,6 +901,7 @@ a {
   }
 
   .bio {
+    width: 60%;
     font-size: 1vw;
     line-height: 3vh;
     letter-spacing: -0.01em;
@@ -920,37 +961,139 @@ a {
   }
 
   .project__info {
-    animation-duration: 3s;
-    animation-name: projectInfoSlider;
+    grid-row: 2/4;
+    grid-column: 1/2;
     display: none;
   }
 
-  @keyframes projectInfoSlider {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 100%;
-    }
+  .hover__one {
+    position: relative;
+    top: 0;
+    padding: 0 5vw;
   }
 
-  .visible__project {
-    display: block;
-    grid-row: 2/4;
-    grid-column: 1/2;
+  .hover__one h3 {
+    font-size: 5vw;
   }
 
-  .project__stack {
+  .hover__one ul li {
     width: 20%;
-    height: 3em;
+    height: 2em;
     font-weight: 300;
     font-size: 1.5vw;
     line-height: 80%;
   }
 
-  .project__button__holder {
-    margin-left: 6.5%;
+  .hover__two {
+    position: relative;
+    top: -3vh;
+    height: auto;
+    padding: 0 2vw;
+  }
+
+  .hover__two h3 {
+    font-size: 2.5vw;
+  }
+
+  .hover__two ul li {
+    width: 25%;
+    height: 2em;
+    font-weight: 300;
+    font-size: 1vw;
+  }
+
+  .hover__two div button {
+    height: 4vh;
+  }
+
+  .hover__three {
+    position: relative;
+    top: -3vh;
+    height: auto;
+    padding: 0 2vw;
+  }
+
+  .hover__three h3 {
+    font-size: 2.5vw;
+  }
+
+  .hover__three ul li {
+    width: 25%;
+    height: 2em;
+    font-weight: 300;
+    font-size: 1vw;
+  }
+
+  .hover__three div button {
+    height: 4vh;
+  }
+
+  .hover__four {
+    position: relative;
+    top: 0;
+    height: auto;
+    padding: 0 4vw;
+  }
+
+  .hover__four h3 {
+    font-size: 5vw;
+  }
+
+  .hover__four ul li {
+    width: 25%;
+    height: 2.5em;
+    font-weight: 300;
+    font-size: 1.5vw;
+  }
+
+  .hover__four div button {
+    height: 6vh;
+  }
+
+  .hover__five {
+    position: relative;
+    height: auto;
+    padding: 0 2vw;
+  }
+
+  .hover__five h3 {
+    font-size: 2.5vw;
+  }
+
+  .hover__five ul li {
+    width: 25%;
+    height: 2em;
+    font-weight: 300;
+    font-size: 1vw;
+  }
+
+  .hover__five div button {
+    height: 4vh;
+  }
+
+  .hover__six {
+    position: relative;
+    height: auto;
+    padding: 0 2vw;
+  }
+
+  .hover__six h3 {
+    font-size: 2.5vw;
+  }
+
+  .hover__six ul li {
+    width: 25%;
+    height: 2em;
+    font-weight: 300;
+    font-size: 1vw;
+  }
+
+  .hover__six div button {
+    height: 4vh;
+  }
+
+  .project__info:hover {
+    display: block;
   }
 
   .project__button {
@@ -965,7 +1108,8 @@ a {
   }
 
   .arrow {
-    display: none;
+    display: flex;
+    align-items: center;
   }
 
   .works {
@@ -1039,6 +1183,30 @@ a {
     width: 100%;
   }
 
+  .project__onePhoto:hover + .hover__one {
+    display: block;
+  }
+
+  .project__twoPhoto:hover + .hover__two {
+    display: block;
+  }
+
+  .project__threePhoto:hover + .hover__three {
+    display: block;
+  }
+
+  .project__fourPhoto:hover + .hover__four {
+    display: block;
+  }
+
+  .project__fivePhoto:hover + .hover__five {
+    display: block;
+  }
+
+  .project__sixPhoto:hover + .hover__six {
+    display: block;
+  }
+
   .project__two {
     grid-column: 1/4;
     grid-row: 3/6;
@@ -1094,6 +1262,10 @@ a {
     margin: 15% 5vw;
   }
 
+  .about__ul {
+    padding-left: 1vw;
+  }
+
   .about__article {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -1106,6 +1278,19 @@ a {
     color: #1a2236;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .button__getCV {
+    color: #fff;
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon {
+    color: inherit;
+    font-size: 2vw;
   }
 
   .all {
@@ -1279,7 +1464,7 @@ a {
   .footer {
     display: flex;
     height: 5%;
-    padding: 0 5vw;
+    padding: 2vh 2vw 1vh;
   }
 
   .footer__button {
@@ -1310,6 +1495,12 @@ a {
   .social {
     width: 2vw;
     padding: 0 1vw;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .text__article {
+    height: 40vh;
   }
 }
 
