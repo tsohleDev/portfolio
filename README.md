@@ -1,51 +1,24 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# README
 
-# Portfolio
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-> A personal website with my contact information and all the public software I have built.
+Things you may want to cover:
 
+* Ruby version
 
-## Built With
+* System dependencies
 
-- HTML CSS
-- JavaScript
-- Figma
+* Configuration
 
-## Live Demo
+* Database creation
 
-[Live Demo](https://tsohledev.github.io/Portfolio/)
+* Database initialization
 
-To get a local copy up and running follow these simple example steps.
+* How to run the test suite
 
-### Deployment
+* Services (job queues, cache servers, search engines, etc.)
 
-Runs on any web browser, e.g Chrome, Expolora... etc
+* Deployment instructions
 
-
-## Authors
-
-👤 **Author**
-
-- GitHub: [@githubhandle](https://github.com/tsohleDev)
-- Twitter: [@twitterhandle](https://twitter.com/RealTsohle)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tsohle-mokhemisi-3687401b2/)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./LICENSE) licensed.
+* ...
