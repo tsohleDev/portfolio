@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .shadow-lg {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10), 0 3px 6px 0 rgba(0, 0, 0, 0.8);
+  }
+
+  .shadow-right {
+    box-shadow: 8px 0px 12px rgba(0, 0, 0, 0.6);
+  }
+
+  .shadow-bottom {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.51);
+  }
+}
+
+
+/* background image from image folder */
+.bg-home {
+  background-image: url('Vector.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60vw 100vh;
+  /*   place on the right side of the screen */
+  background-position: right;
+}
+
+.bg-projects {
+  background: url('top conner.png') top right no-repeat,
+    url('conner.png') bottom left no-repeat,
+    url('image_dots.png') 18vw 8vh no-repeat,
+    url('cross.png') 70vw 20vh no-repeat,
+    url('half circle.png') 80vw 0 no-repeat,
+    url('dots 1 \(Traced\).png') 80vw 80vh no-repeat;
+  background-size: 10vw auto,
+    40vh 32vh,
+    13vw auto,
+    3vw auto,
+    10vw auto,
+    20vw auto;
+}
+
+.bg-about {
+  background: url('dripII 1 \(Traced\).png') top left no-repeat;
+  background-size: 100vw 30vh;
+}
+
+.bg-bottom-conner-2 {
+  background-image: url('conner.png');
+  background-size: auto;
+  background-position: 90vw 0;
+  background-repeat: no-repeat;
+  background-size: 10vw auto;
+}
+
+.bg-dots {
+  background-image: url('dots.png');
+  background-size: auto;
+  background-position: 90vw 0;
+  background-repeat: no-repeat;
+  background-size: 10vw auto;
+}
+
+/* all vh classes template */
+.h-100vh {
+  height: 100vh;
+}
+
+.h-95vh {
+  height: 95vh;
+}
+
+.h-5vh {
+  height: 5vh;
+}
+
+/* all vw classes template */
+.w-100vw {
+  width: 100vw;
+}
+
+.w-50vw {
+  width: 50vw;
+}

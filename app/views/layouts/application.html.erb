@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins&display=swap" rel="stylesheet">
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="m-1">
+    <header class="fixed top-0 bg-[#969696A7] flex justify-around align-center h-5vh w-100vw border-b border-solid border-gray-300">
+      <ul class="flex list-none"> 
+        <li class="mx-4 my-auto"><%= link_to "Home", root_path, class: "text-white hover:text-primary-100 text-[1.5rem]" %></li>
+        <li class="mx-4 my-auto"><%= link_to "Projects", projects_path, class: "text-white hover:text-primary-100 text-[1.5rem]"%></li>
+        <li class="mx-4 my-auto"><%= link_to "Articles", articles_path, class: "text-white hover:text-primary-100 text-[1.5rem]"%></li>
+        <li class="mx-4 my-auto"><%= link_to "Contact", contact_path, class: "text-white hover:text-primary-100 text-[1.5rem]"%></li>
+      </ul>
+    </header>
+
+    <main class="flex-col">
+      <%= yield %>
+    </main>
   </body>
 </html>

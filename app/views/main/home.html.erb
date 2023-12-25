@@ -1,0 +1,87 @@
+<section class="bg-home h-100vh w-100vw">
+    <article class="w-50vw flex-col align-center p-auto my-10vh mx-40">
+        <h1 class="text-primary-100 font-playfair text-9xl font-bold mb-10">Tsohle <br>Mokhemisi</h1>
+
+        <p class="text-xl text-primary-100 font-poppins pr-40">
+        Hello! I am a computer scientist! 
+        What that means is that I can design program, optimize and maintain programs like a really good <span class="font-bold text-2xl">software engineer</span>
+        and I can also do <span class="font-bold text-2xl">data science</span> like training, evaluating and utilizing basic machine learning all the way to deep 
+        learning transformers models like <span class="font-bold text-2xl">GPTs</span> and <span class="font-bold text-2xl">BERTs</span>.
+        <br> <br>
+        I can help you build a product, feature, website even <span class="font-bold text-2xl">AI</span>. Take a look at my work. 
+        If you like what you see and have a project you need coded, don’t hesitate and contact me.
+        <br><br>
+        I use Arch BTW</p>
+    </article>
+
+    <%= link_to "See my projects", projects_path, class: "bg-black text-white hover:bg-white hover:text-primary-100 hover:border hover:border-black transition duration-200 text-3xl font-bold py-10 px-20 mx-40 rounded" %>
+</section>
+
+<section class="h-100vh w-100vw bg-projects mt-20">
+    <h2 class="text-primary-100 font-playfair text-center text-12xl font-bold pt-20 mt-20">Projects</h2>
+
+    <div class="bg-transparent border-4 border-black h-40vh w-50vw mt-20 mx-auto shadow-lg shadow-right shadow-bottom">
+        
+    </div>
+</section>
+
+<section class="grid grid-cols-5 gap-4 bg-about h-100vh w-100vw mt-20 py-25vh">
+    <ul class="col-span-3 grid grid-cols-2 grid-rows-2 mx-[10vw] mt-[2vh]">
+        <li class="bg-black px-20 py-10">
+            <h3 class="text-white font-poppins font-bold mb-5 text-[2rem]">Languages</h3>
+            <ul class="list-disc">
+                <li class="text-white font-bold font-poppins text-[1.2rem]">TypeScript</li>
+                <li class="text-white font-bold font-poppins text-[1.2rem]">Ruby</li>
+                <li class="text-white font-bold font-poppins text-[1.2rem]">Python</li>
+                <li class="text-white font-bold font-poppins text-[1.2rem]">SQL</li>
+                <li class="text-white font-bold font-poppins text-[1.2rem]">c/C++</li>
+            </ul>
+        </li>
+
+        <li class="bg-[#4A4A4A] px-20 py-10">
+            <h3 class="text-white font-poppins font-bold mb-5 text-[2rem]">Frameworks</h3>
+            <ul class="list-disc">
+                <li class="text-white font-bold font-poppins text-[1.2rem]">Bootstrap</li>
+                <li class="text-white font-bold font-poppins text-[1.2rem]">Ruby on rails</li>
+                <li class="text-white font-bold font-poppins text-[1.2rem]">RSpec</li>
+                <li class="text-white font-bold font-poppins text-[1.2rem]">Capibara</li>
+                <li class="text-white font-bold font-poppins text-[1.2rem]">Selenium</li>
+            </ul>
+        </li>
+
+        <li class="bg-[#7A7A7A] px-20 py-10">
+            <h3 class="text-white font-poppins font-bold mb-5 text-[2rem]">Skills</h3>
+            <ul class="list-disc">
+                <li class="text-white font-bold ont-poppins text-[1.2rem]">Codekit</li>
+                <li class="text-white font-bold ont-poppins text-[1.2rem]">Codepen</li>
+                <li class="text-white font-bold ont-poppins text-[1.2rem]">GitHub</li>
+                <li class="text-white font-bold ont-poppins text-[1.2rem]">GitLab</li>
+                <li class="text-white font-bold ont-poppins text-[1.2rem]">Terminal</li>
+            </ul>
+        </li>
+
+        <li class=""></li>
+    </ul>
+
+    <article class="col-span-2">
+        <h2 class="text-8xl text-bold font-playfair">About</h2>
+
+        <p class="text-poppins text-1xl my-10 mr-60">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod 
+        </p>
+
+        <%= link_to "Get My CV", projects_path, class: "bg-black text-white hover:bg-white hover:text-primary-100 hover:border hover:border-black transition duration-200 text-2xl font-bold py-5 px-5 rounded" %>
+    </article>
+</section>
+
+<section class="bg-[#F9F9FA] h-[95vh] w-100vw mt-20 py-10">
+    <h2 class="text-8xl text-bold text-center font-playfair text-primary-100">Get Started</h2>
+
+    <div class="h-[70vh]"></div>
+
+    <%= form_tag('YOUR_EXTERNAL_API_ENDPOINT', method: 'post') do %>
+        <%= text_field_tag 'text_input', nil, placeholder: 'Ask Bernard' %>
+        <%= submit_tag 'Submit', class: "bg-black text-white hover:bg-white hover:text-primary-100 hover:border hover:border-black transition duration-200 text-xl font-bold p-2 rounded" %>
+    <% end %>
+
+</section>
